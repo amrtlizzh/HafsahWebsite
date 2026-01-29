@@ -1,0 +1,119 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100px;
+}
+
+nav{
+    background-color: #D058E2;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center; /* Center items vertically */
+}
+
+#navigation{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    width: 100%; 
+    justify-content: center; 
+}
+
+li, #brand {
+    margin-right: 30px;
+    margin-left: 30px;
+    text-decoration: underline #73128B;
+    font-size: 13px;
+}
+
+#navigation a, footer h2{
+    text-decoration: none;
+    color: #73128B;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    padding: 6px 10px 5px 10px;
+}
+
+.center {
+    background-image: url(images/main\ box.svg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: scroll; 
+    background-position: center;
+}
+
+#homepage{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#hadith{
+    padding: 67px;
+}
+
+footer{
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly; /* Align items to the left and right */
+    align-items: flex-start; /* Center items vertically */
+    padding: 20px 20px;
+  }
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    background-color: plum;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: whitesmoke;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  li, #brand {
+      margin: 5px 0;
+  }
+}

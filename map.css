@@ -1,0 +1,21 @@
+#maps{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5px;
+}
+button{
+    background-color: plum; 
+    color: black;             
+    padding: 10px 15px;      
+    border: none;          
+    border-radius: 7px;   
+    cursor: pointer;        
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+.text-center {
+    text-align: center;
+    padding: 30px;
+  }

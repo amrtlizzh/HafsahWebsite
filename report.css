@@ -1,0 +1,41 @@
+#qr{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0% 0% 0% 0%;
+}
+
+#container{
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat; 
+    height: 600;
+    background-attachment: scroll; 
+    background-position: center;
+    margin: 10;
+}
+#caption{
+    text-align: center; 
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px; 
+    padding: 0% 0% 5% 0%;
+}
+
+h1{
+    color: #620a78;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    
+}
+
+
+.bg {
+    background-image: url(images/reportbg.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: scroll; 
+    background-position: center;
+}
+

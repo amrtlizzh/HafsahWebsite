@@ -1,0 +1,85 @@
+.center{
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+}
+.center .main{
+    padding: 0px 300px 30px;
+}
+
+#general{
+    padding-top: 40px;
+}
+
+h2{
+    padding-top: 40px;
+    padding-right: 50px;
+    text-align: center;
+    color: purple;
+}
+
+.chart {
+    display: none;
+    margin: 30px;
+    padding-top: 40px;
+    grid-row: 1;
+    grid-column: 1;
+}
+.fotorama {
+    display: none;
+    margin: 30px;
+    padding-top: 40px;
+    grid-row: 1;
+    grid-column: 2;
+}
+.contact{
+    display: none;
+    margin: 30px;
+    grid-row: 2;
+    grid-column: 1/span 2;
+}
+
+.contact a{
+      text-decoration: none;
+}
+button {
+      background-color: plum; 
+      color: black;             
+      padding: 10px 15px;      
+      border: none;          
+      border-radius: 7px;   
+      cursor: pointer;        
+      font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    }
+.mrc{
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, tr {
+  padding: 15px;
+}
+
+#middle{
+    grid-column: 1/span 4;
+    grid-row: 1;
+}
+
+p {
+    margin: 0;
+    color: black;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    }
+
+.header-container h1 {
+    margin-right: 10px; 
+}
+  

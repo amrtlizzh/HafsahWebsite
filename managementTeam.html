@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahallah Hafsa</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="managementTeam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+ 
+    $('.dropdown-content a').on('click', function(e) {
+        e.preventDefault();
+        var selectedOption = $(this).text();
+
+        $('.chart, .fotorama, .contact, .mrc').hide();
+
+        if (selectedOption === 'Mahallah Hafsa Organization') {
+            $('.chart, .fotorama, .contact').show(),$('.main').hide();
+        } else if (selectedOption === 'Mahallah Representative Committees') {
+            $('.mrc').show(),$('.main').hide();
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+    <header>
+		<div>
+			<img src="images/logo.svg" alt="Mahallah Hafsa Logo" width="100px" height="100px"/>
+        </div>
+        <div>
+            <img src="images/mahallah.png" alt="Mahallah Hafsa-text" width="400px" height="60px" />
+		</div> 
+    </header>
+        <nav>
+            <div id="brand"><a href="home.html">
+                <img src="images/HOMEPAGE.png" width="200px" height="40px"></a></div>
+            <div>
+                <ul id="navigation">
+                <li><a href="about.html">ABOUT US</a></li>
+                <div class="dropdown">
+                <li><a href="managementTeam.html">MANAGEMENT TEAM <i class="fas fa-angle-down"></i></a>
+                	<div class="dropdown-content">
+                        <a href="#">Mahallah Hafsa Organization</a>
+                        <a href="#">Mahallah Representative Committees</a>
+                      </div>
+                </li>
+            </div>
+                <li><a href="maps.html">MAPS</a></li>
+                <li><a href="rules.html">RULES</a></li>
+                <li><a href="event.html">EVENTS</a></li>
+                <li><a href="facilities.html">FACILITIES</a></li>
+                <li><a href="report.html">REPORT</a></li>
+                </ul>
+            </div>
+        </nav>   
+
+    <section class="center">
+    <div class="main">
+            <h2>SEMESTER 23/24 TEAM</h2>
+            <img src="images/general1.jpg" width="900" height="300">
+            <div id="general"> 
+            <img src="mrc/mrcgeneral.png" width="900" height="300">
+        </div>
+    </div>
+
+        <div class="chart">
+            <img src="images/Hafsah Organizational Chart.png" width="730" height="550">
+        </div>
+
+        <div class="fotorama" 
+        data-autoplay="2500" 
+        data-nav="dots" 
+        data-width="730px"
+        data-height="550px">
+            <img src="images/office.png">
+            <img src="images/principal.png">
+            <img src="images/blockC.png">
+            <img src="images/blockD.png">
+            <img src="images/blockF.png">
+            <img src="images/blockH.png">
+        </div>
+
+      <div class="contact">
+            <div class="header-container">
+                <h1>Contact Us On Whatsapp</h1>
+                  <img src="images/whatsapp.svg" width="40px" height="40px">
+              </div>
+            <a href="whatsapp://send?phone=601158720876" target="_blank">
+                <button>Mahallah Office</button>
+              </a>
+              
+              <a href="whatsapp://send?phone=60193887702" target="_blank">
+                <button>Madam 'Ain</button>
+              </a>
+              
+              <a href="whatsapp://send?phone=60193365370" target="_blank">
+                <button>Madam Salmah Md. Shah</button>
+              </a>
+
+              <a href="whatsapp://send?phone=60192418492" target="_blank">
+                <button>Madam Balqis</button>
+              </a>
+              
+              <a href="whatsapp://send?phone=60132316655" target="_blank">
+                <button>Madam Salmah Yahya</button>
+              </a>
+              
+              <a href="whatsapp://send?phone=601924661008" target="_blank">
+                <button>Madam Wan Zawiyah</button>
+              </a>         
+        </div>
+
+      <div class="mrc">
+            <table border="0px">
+                <h2>Mahallah Representative Committees Semester 23/34</h2>
+                <tr>
+                    <th colspan="4"><img src="mrc/pres.PNG" width="300" height="250"></th>
+                
+                </tr>
+                <tr>
+                    <th><img src="mrc/vicepres.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/secretary1.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/secretary2.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/financial.PNG" width="300" height="250"></th>
+                </tr>
+                <tr>
+                    <th><img src="mrc/education.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/entro.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/culture.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/community.PNG" width="300" height="250"></th>
+                </tr>
+                <tr>
+                    <th><img src="mrc/welfare1.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/welfare2.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/mulcom1.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/mulcom2.PNG" width="300" height="250"></th>
+                </tr>
+                <tr>
+                    <th><img src="mrc/dakwah1.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/dakwah2.PNG" width="300" height="250"></th>
+                    <th><img src="mrc/sportrec.PNG" width="300" height="250"></th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>Contact Us!</h2>
+            <p>
+                <img src="images/gmail box.svg" alt="mailing icon"> mahallahhafsah@gmail.com
+                <br><br>
+                <img src="images/location box.svg" alt="location icon"> Mahallah Hafsah, International Islamic University Malaysia,<br> Jalan Gombak, 53100 Kuala Lumpur, Malaysia
+                <br>
+                <img src="images/phone box.svg" alt="calling icon"> 03 6421 4143 / 4144
+            </p>    
+        </div>
+        <div>
+            <h2>Follow Mahallah Hafsa's Official Social Media</h2>
+                <a href="https://www.facebook.com/mahallah.hafsa.iium/"><img src="images/fb.svg" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com/mahallahhafsa_/"><img src="images/instagram.svg" alt="Instagram icon"></a>  
+        </div>
+    </footer>
+</body>
+</html>

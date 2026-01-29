@@ -1,0 +1,81 @@
+.center{
+  padding-top: 10px;
+  background-image: url(images/main\ box.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+/* Common styles for both large and small screens */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+}
+
+.grid-item {
+  text-align: center;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px; /* Added margin for better separation on smaller screens */
+}
+
+.grid-container img, .grid-item img {
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+h2{
+  text-align: center;
+  color: rgb(62, 16, 62);
+}
+.title {
+  font-family: 'Georgia';
+  font-size: 20px;
+  margin-bottom: 10px;
+  max-height: 60px; /* Limit the height of the title for better fit */
+  overflow: hidden; /* Hide overflow if the title is too long */
+}
+
+.grid-item:hover .desc {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.desc {
+  font-family: Georgia;
+  opacity: 0;
+  transform: translateY(101%);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  background-color: rgba(255, 251, 251, 0.7);
+  padding: 10px;
+  position: absolute;
+  border-radius: 8px;
+  width: 100%;
+  bottom: 0;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  /* Enable overflow on smaller screens */
+  body {
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* Adjust grid layout for smaller screens */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
